@@ -1,0 +1,253 @@
+/* Libadwaita Theme for Qt6 / Dolphin */
+
+* {
+    font-family: "Adwaita Sans", "Cantarell", "Noto Sans", sans-serif;
+    outline: none;
+}
+
+QWidget {
+    background-color: #222226;
+    color: #ffffff;
+    selection-background-color: #3584e4;
+    selection-color: #ffffff;
+}
+
+/* Main Window & View Area */
+QMainWindow, QDialog {
+    background-color: #222226;
+}
+
+QAbstractItemView {
+    background-color: #1d1d20;
+    alternate-background-color: #222226;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+QAbstractItemView::item {
+    border-radius: 6px;
+    padding: 6px;
+    margin: 1px;
+}
+
+QAbstractItemView::item:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+QAbstractItemView::item:selected {
+    background-color: #3584e4;
+    color: #ffffff;
+}
+
+QAbstractItemView::item:selected:hover {
+    background-color: #438de6;
+}
+
+/* Sidebar / Places Panel */
+QDockWidget {
+    border: none;
+    titlebar-close-icon: none;
+    titlebar-normal-icon: none;
+}
+
+QDockWidget::title {
+    background: transparent;
+    padding: 6px;
+}
+
+/* ToolBar / HeaderBar (Nautilus style) */
+QToolBar {
+    background-color: #2e2e32;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    spacing: 6px;
+    padding: 6px 10px;
+}
+
+QToolBar::separator {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 6px 4px;
+}
+
+/* Buttons / ToolButtons (Libadwaita pill style) */
+QToolButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 6px 8px;
+    margin: 1px;
+    color: #ffffff;
+}
+
+QToolButton:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+QToolButton:pressed, QToolButton:checked {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+QPushButton {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+    padding: 6px 14px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+QPushButton:default {
+    background-color: #3584e4;
+    border-color: #3584e4;
+    color: #ffffff;
+}
+
+QPushButton:default:hover {
+    background-color: #438de6;
+}
+
+/* Text Inputs / Path bar / Search */
+QLineEdit {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3584e4;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: #222226;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    color: #9a9996;
+}
+
+/* Tab Bar */
+QTabBar::tab {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 16px;
+    margin-right: 2px;
+    color: #9a9996;
+    font-weight: 500;
+}
+
+QTabBar::tab:selected {
+    color: #ffffff;
+    border-bottom: 2px solid #3584e4;
+}
+
+QTabBar::tab:hover:!selected {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px 6px 0 0;
+}
+
+/* Popup Menus */
+QMenu {
+    background-color: #36363a;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 6px 20px 6px 28px;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+QMenu::item:selected {
+    background-color: #3584e4;
+    color: #ffffff;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 4px 8px;
+}
+
+/* Minimalist Adwaita Scrollbar */
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: rgba(255, 255, 255, 0.2);
+    min-height: 24px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+QScrollBar::handle:vertical:pressed {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: transparent;
+    height: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: rgba(255, 255, 255, 0.2);
+    min-width: 24px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal,
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+
+/* Splitter / Resizer */
+QSplitter::handle {
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 1px;
+}
+
+/* Tooltips */
+QToolTip {
+    background-color: #36363a;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 4px 8px;
+}

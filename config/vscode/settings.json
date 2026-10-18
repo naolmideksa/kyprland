@@ -1,0 +1,85 @@
+{
+    "explorer.confirmDelete": false,
+
+    // Code Runner Configuration (Terminal execution is required for standard input like cin, Scanner, readline)
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.saveAllFilesBeforeRun": false,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc -Wall -Wextra -O2 $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++20 -Wall -Wextra -O2 $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "javascript": "node $fileName",
+        "typescript": "npx ts-node $fileName",
+        "php": "php $fileName",
+        "python": "python3 -u $fileName",
+        "shellscript": "bash $fileName"
+    },
+
+    // C / C++ (Clangd)
+    "clangd.fallbackFlags": [
+        "-std=c++20",
+        "-Wall"
+    ],
+    "clangd.checkUpdates": false,
+
+    // Java (Red Hat)
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.format.settings.profile": "GoogleStyle",
+
+    // Code Formatting & Linters
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+
+    // Intelephense / PHP
+    "intelephense.telemetry.enabled": false,
+    "intelephense.completion.triggerParameterHints": true,
+
+    // General Editor & Terminal Quality of Life
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.wordWrap": "on",
+    "editor.tabSize": 4,
+    "editor.fontLigatures": true,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "files.trimTrailingWhitespace": true
+}

@@ -1,0 +1,210 @@
+config_version = 14
+
+[accessibility]
+ui_scale = 1.0000000074505806
+
+[audio]
+enable_overdrive = true
+
+[bar.default]
+background_opacity = 0.029999999329447746
+capsule = true
+capsule_border_width = 0.0
+capsule_padding = 11.0
+capsule_thickness = 0.86999998427927494
+center = [ "spacer_1", "active_window" ]
+compositor_blur = false
+contact_shadow = true
+end = [ "media", "spacer_1", "tray", "notifications", "network", "brightness", "volume", "battery", "session" ]
+font_family = "Adwaita Sans"
+margin_edge = 2
+radius = 19
+reserve_space = false
+scale = 1.1500000096857548
+shadow = false
+smart_auto_hide = true
+start = [ "launcher", "clock", "spacer_1", "group:g1", "workspaces" ]
+thickness = 30
+widget_spacing = 12
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "end"
+    border = ""
+    border_width = 1.5
+    enabled = true
+    fill = "#12151A"
+    id = "g1"
+    members = [ "temp", "sysmon_2", "sysmon_3" ]
+    opacity = 1.0
+    padding = 7.0
+    widget_spacing = 15
+
+[control_center]
+width = 780
+
+    [control_center.calendar]
+    show_events_card = false
+
+[dock]
+background_opacity = 0.0
+cross_axis_padding = 2
+enabled = true
+icon_size = 67
+inactive_opacity = 0.99999997764825821
+item_spacing = 0
+launcher_icon = "align-box-center-middle-filled"
+launcher_position = "start"
+main_axis_padding = 0
+pinned = [ "google-chrome", "org.gnome.Nautilus", "code-oss", "kitty" ]
+radius = 12
+radius_bottom_right = 0
+reserve_space = false
+show_dots = true
+smart_auto_hide = true
+
+[location]
+address = "Harar"
+
+[lockscreen]
+blur_intensity = 0.0
+tint_intensity = 0.0
+transition = []
+wallpaper = "/home/naolmid/Pictures/vimal-s-GBg3jyGS-Ug-unsplash.jpg"
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 984.0
+    cy = 958.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 240.0
+    box_width = 592.0
+    cx = 960.0
+    cy = 228.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background_opacity = 0.0
+        background_radius = 14
+        clock_style = "digital"
+        format = "{:%I:%M}"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 32.0
+    box_width = 256.0
+    cx = 960.0
+    cy = 332.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+        center_text = true
+        clock_style = "digital"
+        font_family = "Adwaita Sans"
+        format = "{:%a %d %b %y }"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 96.0
+    box_width = 128.0
+    cx = 960.0
+    cy = 740.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "media_player"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = false
+        color = "on_surface"
+        hide_when_no_media = true
+        layout = "vertical"
+        shadow = false
+
+[shell]
+corner_radius_scale = 0.7500000111758709
+font_family = "Adwaita Sans"
+password_style = "random"
+
+    [shell.panel]
+    control_center_placement = "floating"
+
+    [shell.screenshot]
+    confirm_region = true
+    copy_to_clipboard = true
+    directory = "/home/naolmid/Pictures"
+    save_to_file = true
+
+[system.monitor]
+gpu_poll_seconds = 11
+
+[theme]
+builtin = "Ayu"
+community_palette = "Solarized Osaka"
+source = "builtin"
+
+[wallpaper.default]
+path = "/home/naolmid/Pictures/vimal-s-GBg3jyGS-Ug-unsplash.jpg"
+
+[wallpaper.last]
+path = "/home/naolmid/Pictures/vimal-s-GBg3jyGS-Ug-unsplash.jpg"
+
+[wallpaper.monitors.eDP-1]
+path = "/home/naolmid/Pictures/vimal-s-GBg3jyGS-Ug-unsplash.jpg"
+
+[widget.active_window]
+icon_size = 12
+max_length = 287
+min_length = 41
+
+[widget.clock]
+format = "{:%I:%M %p  %a  %d %b %Y}"
+
+[widget.media]
+album_art_only = true
