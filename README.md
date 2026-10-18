@@ -25,7 +25,7 @@
 ### One-line Install (Clone & Run)
 
 ```bash
-git clone https://github.com/<your-username>/dotfiles.git ~/dotfiles
+git clone https://github.com/naolmideksa/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./install.sh
 ```
