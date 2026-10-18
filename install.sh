@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==============================================================================
-#  HYPRLAND + NOCTALIA MACOS / KDE HYBRID SETUP INSTALLER
+#  KYPRLAND - MACOS / KDE HYBRID HYPRLAND RICE INSTALLER
 #  Designed for clean, floating-first, 100% zoom, macOS topbar & bottom dock.
 # ==============================================================================
 
@@ -18,12 +18,12 @@ BACKUP_DIR="$HOME/.config/hypr-setup-backup-$(date +%Y%m%d_%H%M%S)"
 
 echo -e "${CYAN}${BOLD}"
 echo "  ██╗  ██╗██╗   ██╗██████╗ ██████╗ ██╗      █████╗ ███╗   ██╗██████╗ "
-echo "  ██║  ██║╚██╗ ██╔╝██╔══██╗██╔══██╗██║     ██╔══██╗████╗  ██║██╔══██╗"
-echo "  ███████║ ╚████╔╝ ██████╔╝██████╔╝██║     ███████║██╔██╗ ██║██║  ██║"
-echo "  ██╔══██║  ╚██╔╝  ██╔═══╝ ██╔══██╗██║     ██╔══██║██║╚██╗██║██║  ██║"
-echo "  ██║  ██║   ██║   ██║     ██║  ██║███████╗██║  ██║██║ ╚████║██████╔╝"
+echo "  ██║ ██╔╝╚██╗ ██╔╝██╔══██╗██╔══██╗██║     ██╔══██╗████╗  ██║██╔══██╗"
+echo "  █████╔╝  ╚████╔╝ ██████╔╝██████╔╝██║     ███████║██╔██╗ ██║██║  ██║"
+echo "  ██╔═██╗   ╚██╔╝  ██╔═══╝ ██╔══██╗██║     ██╔══██║██║╚██╗██║██║  ██║"
+echo "  ██║  ██╗   ██║   ██║     ██║  ██║███████╗██║  ██║██║ ╚████║██████╔╝"
 echo "  ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ "
-echo "        ~ macOS Bar & Dock + KDE Floating Workflow on Hyprland ~     "
+echo "                ~ Kyprland: Floating-First Hyprland Rice ~           "
 echo -e "${NC}"
 
 # 1. Distro & AUR Helper check

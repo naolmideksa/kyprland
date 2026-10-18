@@ -1,6 +1,7 @@
-# ✨ macOS / KDE Floating Hyprland Rice
+# 🌌 Kyprland
+### macOS / KDE Floating-First Hyprland Rice
 
-> A clean, floating-first, beautifully scaled Hyprland setup with macOS-style window controls, native minimization, and Noctalia's floating top bar + bottom dock.
+> A clean, floating-first, beautifully scaled Hyprland rice with macOS-style window controls, native minimization, and Noctalia's floating top bar + bottom dock.
 
 ---
 
@@ -25,8 +26,8 @@
 ### One-line Install (Clone & Run)
 
 ```bash
-git clone https://github.com/naolmideksa/dotfiles.git ~/dotfiles
-cd ~/dotfiles
+git clone https://github.com/naolmideksa/kyprland.git ~/kyprland
+cd ~/kyprland
 ./install.sh
 ```
 
