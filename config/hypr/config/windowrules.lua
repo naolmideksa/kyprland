@@ -9,7 +9,6 @@ hl.window_rule({
     float             = true,
     keep_aspect_ratio = true,
     size              = { "max(monitor_w, monitor_h)*0.25", "min(monitor_w, monitor_h)*0.25" },
-    pin               = true,
 })
 
 -- Gaming
